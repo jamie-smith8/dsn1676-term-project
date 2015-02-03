@@ -32,10 +32,11 @@ header {
 .seed-one {
     color: red;
     position: absolute;
-    left: 300px;
+    left: 160px;
     top: 150px;
     width: 2rem;
-    animation: seed-travel-one 10s infinite;
+   -webkit-animation: seed-travel-one 10s forwards;
+    animation: seed-travel-one 10s forwards, box-rotate 10s forwards;
 }
 
 .seed-two {
@@ -93,6 +94,17 @@ header {
 
 
 
+@-webkit-keyframes box-rotate {
+    
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+    
+}
 
 
 
@@ -102,33 +114,27 @@ header {
 @-webkit-keyframes seed-travel-one {
     
     0% {
-        -webkit-transform: translateY(0px);
-       
+        -webkit-transform: translateY(0px) rotate(50deg);
     }
     
-    25% {
-        -webkit-transform: translateX(100px);
-            }
+    20% {
+        -webkit-transform: translate(80px, -60px) rotate(100deg);
+        }
     
-    30% {
-        -webkit-transform: translateY(40px);
-            }
     40% {
-        -webkit-transform: translateX(60px);
-    }
+        -webkit-transform: translate(120px, -30px) rotate(-200deg);
+        }
     
-    50% {
-        -webkit-transform: translateY(120px);
-       
-    }
+     60% {
+        -webkit-transform: translate(180px, -80px) rotate(360deg);
+        }
     
-    75% {
-        -webkit-transform: translateY(120px)
-    }
+     80% {
+        -webkit-transform: translate(230px, 100px) rotate(-200deg);
+        }
     
     100% {
-        -webkit-transform: translateY(0px);
-    
+        -webkit-transform: translateX(300px) rotate(100deg);
 }
     
 }
