@@ -1,0 +1,136 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+    
+html {
+    box-sizing: border-box;
+    
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;    
+}
+
+*, *::before, *::after {
+box-sizing: inherit;
+}
+
+header {
+    height: 90vh;
+    width: 100%;
+}
+
+.dandi {
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    width: 15rem;
+}
+
+.seed-one {
+    color: red;
+    position: absolute;
+    left: 300px;
+    top: 150px;
+    width: 2rem;
+    animation: seed-travel-one 10s infinite;
+}
+
+.seed-two {
+    position: absolute;
+    left: 160px;
+    top: 150px;
+    width: 1.5rem;
+    transform: rotate(120deg);
+}
+
+.seed-three {
+    position: absolute;
+    left: 140px;
+    top: 200px;
+    width: 1rem;
+    transform: rotate(300deg);
+}
+
+.seed-four {
+    position: absolute;
+    left: 170px;
+    top: 150px;
+    width: 1rem;
+    transform: rotate(90deg);
+}
+
+.seed-five {
+    position: absolute;
+    left: 170px;
+    top: 150px;
+    width: 1rem;
+    transform: rotate(90deg);
+}
+
+.title {
+    position: absolute;
+    left: 180px;
+    top: 300px;
+    text-transform: uppercase;
+    font-family: 'Sansita One', serif;
+    letter-spacing: 4px;
+}
+
+.title p {
+    text-transform: lowercase;
+}
+
+.ham-nav {
+    position:absolute;
+    width: 4rem;
+    right: 10px;
+    top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes seed-travel-one {
+    
+    0% {
+        -webkit-transform: translateY(0px);
+       
+    }
+    
+    25% {
+        -webkit-transform: translateX(100px);
+            }
+    
+    30% {
+        -webkit-transform: translateY(40px);
+            }
+    40% {
+        -webkit-transform: translateX(60px);
+    }
+    
+    50% {
+        -webkit-transform: translateY(120px);
+       
+    }
+    
+    75% {
+        -webkit-transform: translateY(120px)
+    }
+    
+    100% {
+        -webkit-transform: translateY(0px);
+    
+}
+    
+}
+
+
