@@ -17,10 +17,15 @@ html {
 box-sizing: inherit;
 }
 
+
+
+
 header {
     height: 90vh;
     width: 100%;
 }
+
+
 
 .dandi {
     position: absolute;
