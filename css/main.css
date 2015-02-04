@@ -23,7 +23,7 @@ box-sizing: inherit;
 header {
     height: 90vh;
     width: 100%;
-    transition: background-color 2s ease;
+    transition: background-color 10s ease;
 }
 
 header:hover {
@@ -135,7 +135,7 @@ header:hover {
     text-transform: uppercase;
     font-family: 'Sansita One', serif;
     letter-spacing: 4px;
-    transition: color 2s ease;
+    transition: color 10s ease;
 }
 
 .title:hover {
@@ -166,6 +166,11 @@ h1 {
     font-size: 10%;
     font-family: 'Sansita One', serif;
     color: white;
+    transition: color 10s ease;
+}
+
+.for-you:hover {
+    color: #FF6666;
 }
 
 .black-arrow {
@@ -187,6 +192,13 @@ h1 {
     width: 4rem;
     right: 5%;
     top: 5%;
+}
+
+.white-nav {
+    position:absolute;
+    width: 4rem;
+    right: 5%;
+    top: 3.2%;
 }
 
 .dandi {
@@ -961,6 +973,10 @@ h1 {
     
 .dandi {
     width: 25%;
+}
+    
+header {
+    transition: background-color 20s ease;
 }
     
 .seed-one {
