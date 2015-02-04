@@ -27,6 +27,8 @@ header {
     left: 40px;
     top: 60px;
     width: 15rem;
+    -webkit-animation: dandi-scale 20s  infinite;
+    animation: dandi-scale 20s ease-in-out infinite alternate;
 }
 
 .seed-one {
@@ -34,49 +36,49 @@ header {
     position: absolute;
     left: 160px;
     top: 150px;
-    width: 2rem;
-   -webkit-animation: seed-travel-one 5s forwards;
-    animation: seed-travel-one 5s forwards, box-rotate 10s forwards;
+    width: 4%;
+   -webkit-animation: seed-travel-one 9s forwards;
+    animation: seed-travel-one 9s forwards;
 }
 
 .seed-two {
     position: absolute;
     left: 160px;
     top: 150px;
-    width: 1.5rem;
+    width: 6%;
     transform: rotate(30deg);
-    -webkit-animation: seed-travel-two 5s forwards;
-    animation: seed-travel-two 5s forwards, box-rotate 10s forwards;
+    -webkit-animation: seed-travel-two 7s forwards;
+    animation: seed-travel-two 7s forwards;
 }
 
 .seed-three {
     position: absolute;
     left: 140px;
     top: 200px;
-    width: 1rem;
+    width: 4%;
     transform: rotate(300deg);
-    -webkit-animation: seed-travel-three 5s forwards;
-    animation: seed-travel-three 5s forwards, box-rotate 10s forwards;
+    -webkit-animation: seed-travel-three 8s forwards;
+    animation: seed-travel-three 8s forwards;
 }
 
 .seed-four {
     position: absolute;
     left: 170px;
     top: 150px;
-    width: 1rem;
+    width: 5%;
     transform: rotate(90deg);
-    -webkit-animation: seed-travel-four 5s forwards;
-    animation: seed-travel-four 5s forwards, box-rotate 10s forwards;
+    -webkit-animation: seed-travel-four 12s forwards;
+    animation: seed-travel-four 12s forwards;
 }
 
 .seed-five {
     position: absolute;
     left: 170px;
     top: 150px;
-    width: 1rem;
+    width: 4%;
     transform: rotate(90deg);
-    -webkit-animation: seed-travel-five 5s forwards;
-    animation: seed-travel-five 5s forwards, box-rotate 10s forwards;
+    -webkit-animation: seed-travel-five 10s forwards;
+    animation: seed-travel-five 10s forwards; 
 }
 
 .title {
@@ -100,21 +102,16 @@ header {
 }
 
 
-
-
-@-webkit-keyframes box-rotate {
+@-webkit-keyframes dandi-scale {
     
     0% {
-        -webkit-transform: rotate(0deg);
+        -webkit-transform: scale(1,1);
     }
     
     100% {
-        -webkit-transform: rotate(360deg);
+        -webkit-transform: scale(1.2,1.2);
     }
-    
 }
-
-
 
 
 
@@ -125,19 +122,19 @@ header {
         -webkit-transform: translateY(0px) rotate(50deg);
     }
     
-    20% {
+    30% {
         -webkit-transform: translate(80px, -60px) rotate(100deg);
         }
     
-    40% {
+    50% {
         -webkit-transform: translate(120px, -30px) rotate(-200deg);
         }
     
-     60% {
+     67% {
         -webkit-transform: translate(180px, -80px) rotate(360deg);
         }
     
-     80% {
+     85% {
         -webkit-transform: translate(230px, 100px) rotate(-200deg);
         }
     
@@ -154,19 +151,19 @@ header {
         -webkit-transform: translateY(0px) rotate(50deg);
     }
     
-    20% {
+    10% {
         -webkit-transform: translate(80px, -60px) rotate(-100deg);
         }
     
-    40% {
+    25% {
         -webkit-transform: translate(120px, -30px) rotate(200deg);
         }
     
-     60% {
+     40% {
         -webkit-transform: translate(180px, -80px) rotate(-360deg);
         }
     
-     80% {
+     75% {
         -webkit-transform: translate(230px, 100px) rotate(200deg);
         }
     
@@ -182,19 +179,19 @@ header {
         -webkit-transform: translateY(0px) rotate(50deg);
     }
     
-    20% {
+    30% {
         -webkit-transform: translate(80px, 60px) rotate(-100deg);
         }
     
-    40% {
+    50% {
         -webkit-transform: translate(60px, 60px) rotate(200deg);
         }
     
-     60% {
+     70% {
         -webkit-transform: translate(180px, -80px) rotate(-360deg);
         }
     
-     80% {
+     90% {
         -webkit-transform: translate(230px, 100px) rotate(200deg);
         }
     
@@ -210,19 +207,19 @@ header {
         -webkit-transform: translateY(0px) rotate(50deg);
     }
     
-    20% {
+    25% {
         -webkit-transform: translate(110px, 90px) rotate(-100deg);
         }
     
-    40% {
+    55% {
         -webkit-transform: translate(130px, -60px) rotate(200deg);
         }
     
-     60% {
+    67% {
         -webkit-transform: translate(140px, 80px) rotate(-360deg);
         }
     
-     80% {
+     85% {
         -webkit-transform: translate(300px, 60px) rotate(200deg);
         }
     
