@@ -33,6 +33,7 @@ header:hover {
 .btn {
     background-image: url(../images/ham-nav-03.svg);
     border-style: none;
+    background-color: none;
     color: none;
     height: 2rem;
     width: 3rem;
@@ -45,7 +46,7 @@ header:hover {
     display: none;
 }
 
-js-panel-open {
+.js-panel-open {
     display: block;
 }
 
