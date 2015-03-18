@@ -21,7 +21,7 @@ box-sizing: inherit;
 
 
 header {
-    height: 90vh;
+    height: 50vh;
     width: 100%;
     transition: background-color 10s ease;
 }
@@ -29,6 +29,26 @@ header {
 header:hover {
     background-color: black;
 }
+
+.btn {
+    background-image: url(../images/ham-nav-03.svg);
+    border-style: none;
+    color: none;
+    height: 2rem;
+    width: 3rem;
+    background-repeat: no-repeat;
+    position:absolute;
+    right: .7%;
+}
+
+.panel {
+    display: none;
+}
+
+js-panel-open {
+    display: block;
+}
+
 
 .seed-one {
     color: red;
@@ -129,9 +149,9 @@ header:hover {
 
 .title {
     color: #C0C0C0;
-    left: 50%;
-    top: 13%;
     position: absolute;
+    left: 45%;
+    top: 40%;
     text-transform: uppercase;
     font-family: 'Sansita One', serif;
     letter-spacing: 4px;
@@ -177,14 +197,14 @@ h1 {
     position: absolute;
     width: 5%;
     left: 48%;
-    bottom: 15%;
+    top: 45%;
 }
 
 .white-arrow {
     position: absolute;
     width: 5%;
     left: 48%;
-    bottom: 14%;
+    top: 45%;
 }
 
 .ham-nav {
@@ -646,6 +666,20 @@ h1 {
 
 
 @media only screen and (min-width: 35em) {
+ 
+.white-arrow {
+    top:75%;
+}
+    
+    
+.black-arrow {
+    top: 75%;    
+}
+    
+header {
+    height: 80vh;
+}
+
     
 .title {
     top: 24%;
@@ -955,7 +989,21 @@ h1 {
 }
 
 @media only screen and (min-width: 90em) {
-  
+
+.white-arrow {
+    bottom:2%;
+}
+    
+    
+.black-arrow {
+    bottom: 2%;    
+}
+    
+header {
+    height: 100vh;
+}
+    
+    
 .title {
     top: 35%;
     left: 20%;
