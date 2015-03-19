@@ -1,3 +1,7 @@
+html {
+    font-family: 'Univers' 'Helvetica' sans-serif;
+}
+
 .panel {
     display: none; 
     position: absolute;
@@ -24,7 +28,6 @@
 
 .top-nav {
     list-style-type: none;
-    font-family: 'Univers' 'Helvetica' sans-serif;
     font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
@@ -73,4 +76,8 @@
     position: relative;
     padding: 20px 0px;
     text-align: center;
+    color: #E65C5C;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    
 }
