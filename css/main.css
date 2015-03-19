@@ -49,11 +49,6 @@ html {
     background-color: #E65C5C;
 }
 
-.dandi {
-    height: 70vh;
-    position: absolute;
-    left: 10%;
-}
 
 .header {
     height: 90vh;
@@ -66,9 +61,13 @@ html {
 
 .title {
     text-align: center;
-    position: absolute;
-    top: 45%;
-    left: 40%;
+    margin: auto;
+    position: relative;
+    top: 40%;
+    color: #D84802;
+    font-family: 'Lobster', cursive;
+    font-size: 8vmax;
+    text-shadow: 2px 2px #fff;
 }
 
 
@@ -76,7 +75,7 @@ html {
     position: relative;
     padding: 20px 0px;
     text-align: center;
-    color: #E65C5C;
+    color: #D84802;
     font-family: 'Lobster', cursive;
     font-size: 30px;
     
