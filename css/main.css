@@ -6,7 +6,6 @@
     display: block;
     position: absolute;
     top: 40px;
-    right: 20px;
 }
 
 .top-nav {
@@ -28,6 +27,11 @@
     padding-top: 5px;
     color: white;
     font-family: 'Droid Sans', sans-serif;
+    transition: color 2ms ease;
+}
+
+.top-nav-li:hover {
+    color: #D84802;
 }
 
 .btn {
@@ -40,8 +44,29 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    right: 10px;
+    left: 10px;
     top: 10px;
+    transition: width 2s;
+}
+
+.btn:hover {
+    width: 40px;
+    animation: wiggle 10ms alternate infinite;
+    @-webkit-animation: wiggle 10ms alternate infinite;
+    @-moz-animation: wiggle 10ms alternate infinite;
+}
+
+@keyframes wiggle {
+    
+    0% {
+        transform: rotate(-5deg)
+    }
+    
+    100% {
+        transform:rotate(5deg)
+    }
+    
+    
 }
 
 .header {
@@ -65,39 +90,8 @@
     animation: play-record 3000ms infinite linear;
     @-webkit-animation: play-record 3000ms infinite linear;
     @-moz-animation: play-record 3000ms infinite linear;
-    @-ms-animation: play-record 3000ms infinite linear;
 }
 
-.record-label {
-    width: 10vh;
-    margin: auto;
-    display: block;
-}
-
-.title {
-    text-align: center;
-    margin: auto;
-    position: relative;
-    top: 40%;
-    color: #D84802;
-    font-family: 'Lobster', cursive;
-    font-size: 8vmax;
-    text-shadow: 2px 2px #fff;
-}
-
-
-.est {
-    position: relative;
-    margin: auto;
-    text-align: center;
-    top: 80%;
-    padding: 20px 0px;
-    text-align: center;
-    color: #D84802;
-    font-family: 'Lobster', cursive;
-    font-size: 30px;
-    
-}
 
 @keyframes play-record {
     0% {
@@ -129,15 +123,38 @@
     }
 }
 
-@-ms-@keyframes play-record {
-    0% {
-       transform: rotate(0deg) 
-    }
-    
-    100% {
-        transform: rotate(360deg)
-    }
+.record-label {
+    width: 10vh;
+    margin: auto;
+    display: block;
 }
+
+.title {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 40%;
+    color: #D84802;
+    font-family: 'Lobster', cursive;
+    font-size: 8vmax;
+    text-shadow: 2px 2px #fff;
+}
+
+
+.est {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 85%;
+    padding: 20px 0px;
+    text-align: center;
+    color: #D84802;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    
+}
+
+
 
 
 
@@ -152,7 +169,7 @@
     .spin-record {
         width: 30%;
         margin: -15%;
-        top: 35%;
+        top: 30%;
     }
     
     
@@ -166,7 +183,7 @@
 
      .spin-record {
         width: 25%;
-        top: 35%;
+        top: 30%;
         margin: -12.5%; 
     }
     
@@ -182,7 +199,7 @@
 
     .spin-record {
         width: 20%;
-        top: 30%;
+        top: 26%;
         margin: -10%; 
     }
     
