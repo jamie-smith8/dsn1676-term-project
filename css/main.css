@@ -5,8 +5,8 @@
 .js-panel-open {
     display: block;
     position: absolute;
-    top: 10px;
-    right: 14%;
+    top: 40px;
+    right: 20px;
 }
 
 .top-nav {
@@ -23,7 +23,6 @@
 .top-nav-li {
     margin: 0;
     padding: 20px 10px;
-    display: inline;
     margin: 0;
     padding-right: 10px;
     padding-top: 5px;
@@ -63,6 +62,10 @@
     top: 18%;
     left: 50%;
     margin-left: -20%;
+    animation: play-record 3000ms infinite linear;
+    @-webkit-animation: play-record 3000ms infinite linear;
+    @-moz-animation: play-record 3000ms infinite linear;
+    @-ms-animation: play-record 3000ms infinite linear;
 }
 
 .record-label {
@@ -87,12 +90,118 @@
     position: relative;
     margin: auto;
     text-align: center;
-    top: 90vh;
+    top: 80%;
     padding: 20px 0px;
     text-align: center;
     color: #D84802;
     font-family: 'Lobster', cursive;
     font-size: 30px;
+    
+}
+
+@keyframes play-record {
+    0% {
+       transform: rotate(0deg) 
+    }
+    
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-@keyframes play-record {
+    0% {
+       transform: rotate(0deg) 
+    }
+    
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@-moz-@keyframes play-record {
+    0% {
+       transform: rotate(0deg) 
+    }
+    
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@-ms-@keyframes play-record {
+    0% {
+       transform: rotate(0deg) 
+    }
+    
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 25em) {
+
+    .spin-record {
+        width: 30%;
+        margin: -15%;
+        top: 35%;
+    }
+    
+    
+    
+    
+    
+}
+
+
+@media only screen and (min-width: 38em) {
+
+     .spin-record {
+        width: 25%;
+        top: 35%;
+        margin: -12.5%; 
+    }
+    
+    
+    
+    
+    
+    
+}
+
+
+@media only screen and (min-width: 50em) {
+
+    .spin-record {
+        width: 20%;
+        top: 30%;
+        margin: -10%; 
+    }
+    
+    
+    
+    
+    
+    
+}
+
+
+@media only screen and (min-width: 90em) {
+
+    
+    
+    
+    
+    
+    
     
 }
 
