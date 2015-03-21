@@ -5,7 +5,7 @@
 .js-panel-open {
     display: block;
     position: absolute;
-    top: 40px;
+    top: 60px;
 }
 
 .top-nav {
@@ -52,8 +52,8 @@
 .btn:hover {
     width: 40px;
     animation: wiggle 10ms alternate infinite;
-    @-webkit-animation: wiggle 10ms alternate infinite;
-    @-moz-animation: wiggle 10ms alternate infinite;
+    -webkit-animation: wiggle 10ms alternate infinite;
+    -moz-animation: wiggle 10ms alternate infinite;
 }
 
 @keyframes wiggle {
@@ -88,8 +88,8 @@
     left: 50%;
     margin-left: -20%;
     animation: play-record 3000ms infinite linear;
-    @-webkit-animation: play-record 3000ms infinite linear;
-    @-moz-animation: play-record 3000ms infinite linear;
+    -webkit-animation: play-record 3000ms infinite linear;
+    -moz-animation: play-record 3000ms infinite linear;
 }
 
 
@@ -123,11 +123,6 @@
     }
 }
 
-.record-label {
-    width: 10vh;
-    margin: auto;
-    display: block;
-}
 
 .title {
     text-align: center;
@@ -140,22 +135,42 @@
     text-shadow: 2px 2px #fff;
 }
 
+.arrow {
+    width: 50px;
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    margin-left: -25px;
+}
 
 .est {
-    position: relative;
+    position: absolute;
     margin: auto;
     text-align: center;
-    top: 85%;
+    top: 90%;
+    left: 50%;
+    margin-left: -47px;
     padding: 20px 0px;
-    text-align: center;
     color: #D84802;
     font-family: 'Lobster', cursive;
     font-size: 30px;
     
 }
 
+.one {
+    position: absolute;
+    top: 100%;
+}
 
+.move {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
 
+.hula {
+    width: 44%;
+}
 
 
 
