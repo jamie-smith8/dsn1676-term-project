@@ -12,15 +12,23 @@
 </head>
 <body> 
     
+    <ul class="skip-links">
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
+    
+    
+    
     <div class="header">
          <nav>   
             <button class="btn"></button>
 
             <div class="panel">
                 <ul class="top-nav">
-                    <li class="top-nav-li">One</li>
-                    <li class="top-nav-li">Two</li>
-                    <li class="top-nav-li">Three</li>
+                    <li class="top-nav-li"><a href="#surfin">Surf</a></li>
+                    <li class="top-nav-li"><a href="#girl">Hula</a></li>
+                    <li class="top-nav-li"><a href="#coupe">Coupe</a></li>
                 </ul>
             </div>
         </nav>
@@ -37,30 +45,24 @@
     
     <div class="grid one">
     
-        <div class="unit unit-xs-1 unit-s-1 unit-m-1-3">
+        <div id="surfin" class="unit unit-xs-1 unit-s-1 unit-m-1-3">
             <img class="move surf" src="images/surf-usa.svg">
             <button class="btns btn-surf">Surfin' USA</button>
         </div>
             
-        <div class="unit unit-xs-1 unit-s-1 unit-m-1-3">    
+        <div id="girl" class="unit unit-xs-1 unit-s-1 unit-m-1-3">    
             <img class="move hula" src="images/hula-girl.svg">
             <button class="btns btn-fade">Happy Hula</button>
         </div>
         
-        <div class="unit unit-xs-1 unit-s-1 unit-m-1-3">
+        <div id="coupe" class="unit unit-xs-1 unit-s-1 unit-m-1-3">
             <img class="move truck" src="images/truck.svg">
             <button class="btns btn-slide-left">Little Deuce Coupe</button>
         </div>
 
     
     </div>
-
-    
-    
-    
-    
-    
-    
+        
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/main.js"></script>

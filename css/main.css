@@ -19,20 +19,25 @@
     letter-spacing: 5px;
 }
 
-.top-nav-li {
+a {
     margin: 0;
     padding: 20px 10px;
     margin: 0;
-    padding-right: 10px;
-    padding-top: 5px;
     color: white;
     font-family: 'Droid Sans', sans-serif;
     transition: color 2ms ease;
+    text-decoration: none;
 }
 
-.top-nav-li:hover {
+a:hover {
     color: #D84802;
 }
+
+.top-nav-li {
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
 
 .btn {
     background-image: url(../images/nav-toggle.svg);
@@ -103,7 +108,7 @@
     }
 }
 
-@-webkit-@keyframes play-record {
+@-webkit-keyframes play-record {
     0% {
        transform: rotate(0deg) 
     }
@@ -113,7 +118,7 @@
     }
 }
 
-@-moz-@keyframes play-record {
+@-moz-keyframes play-record {
     0% {
        transform: rotate(0deg) 
     }
@@ -183,10 +188,12 @@
     margin: auto;
     margin-bottom: 3rem;
     margin-top: 1rem;
+    border: #F2D753 solid 1px;
 }
 
 .btns:hover {
     color: #F2D753;
+    border: #D84802 solid 2px;
 }
 
 .surf {
@@ -220,7 +227,7 @@
     }
 }
 
-@-webkit-@keyframes dance {
+@-webkit-keyframes dance {
     0% {
        transform: rotate(-2deg) 
     }
@@ -230,7 +237,7 @@
     }
 }
 
-@-moz-@keyframes dance {
+@-moz-keyframes dance {
     0% {
        transform: rotate(-2deg) 
     }
@@ -256,6 +263,22 @@
 .js-slide-left {
     right: 100vw;
 }
+
+.header {
+    height: 90vh;
+    background-color: #F2D753;
+    width: 100%;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+
 
 
 @media only screen and (min-width: 25em) {
