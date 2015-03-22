@@ -138,7 +138,42 @@ a:hover {
     font-family: 'Lobster', cursive;
     font-size: 8vmax;
     text-shadow: 2px 2px #fff;
+    
+    animation: zoom 5s ease;
+    -webkit-animation: zoom 5s ease;
+    -moz-animation: zoom 5s ease;
 }
+
+@keyframes zoom {
+     0% {
+       transform: scale(0,0); 
+    }
+    
+    100% {
+        transform: scale(1,1)
+    }
+}
+
+@-webkit-keyframes zoom {
+    0% {
+       transform: scale(0,0); 
+    }
+    
+    100% {
+        transform: scale(1,1)
+    }
+}
+
+@-moz-keyframes zoom {
+     0% {
+       transform: scale(0,0); 
+    }
+    
+    100% {
+        transform: scale(1,1)
+    }
+}
+
 
 .arrow {
     width: 50px;
@@ -201,7 +236,44 @@ a:hover {
     left: -100vw;
     
     transition: all 2s linear;
+    
+    animation: surf 500ms infinite linear;
+    -webkit-animation: surf 500ms infinite linear;
+    -moz-animation: surf 500ms infinite linear;
 }
+
+@keyframes surf {
+    0% {
+       transform: rotate(-5deg) 
+    }
+    
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+@-webkit-keyframes surf {
+    0% {
+       transform: rotate(-5deg) 
+    }
+    
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes surf {
+    0% {
+       transform: rotate(-5deg) 
+    }
+    
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+
+
 
 .js-slide {
     left: 100vw;
