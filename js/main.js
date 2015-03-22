@@ -15,6 +15,13 @@ $btnSlide.on('click', function () {
 var $btnFade = $('.btn-fade');
 var $hula = $('.hula');
 
-$btnFade.on('click' function () {
+$btnFade.on('click', function () {
     $hula.toggleClass('js-fade');
-}
+});
+
+var $btnSlideLeft = $('.btn-slide-left');
+var $truck = $('.truck');
+
+$btnSlideLeft.on('click', function () {
+    $truck.toggleClass('js-slide-left');
+});

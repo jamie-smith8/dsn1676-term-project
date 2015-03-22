@@ -157,9 +157,13 @@
     
 }
 
+
 .one {
     position: absolute;
+    left: 50%;
+    margin-left: -190px;
     top: 100%;
+    overflow: hidden;
 }
 
 .move {
@@ -169,12 +173,11 @@
 }
 
 .btns {
-    background-color: #D84802;
-    color: white;
-    font-family: 'Droid Sans', sans-serif;
+    background-color: transparent;
+    color: #D84802;
+    font-family: 'Lobster', cursive;
     padding: 3px 10px;
-    text-transform: uppercase;
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 1px;
     display: block;
     margin: auto;
@@ -182,17 +185,77 @@
     margin-top: 1rem;
 }
 
+.btns:hover {
+    color: #F2D753;
+}
+
 .surf {
     position: relative;
     left: -100vw;
-    transition: all 3000ms;
+    
+    transition: all 2s linear;
 }
 
 .js-slide {
     left: 100vw;
 }
 
+.hula {
+    opacity: 0;
+    
+    transition: opacity 1s linear;
+    
+    animation: dance 200ms infinite linear;
+    -webkit-animation: dance 200ms infinite linear;
+    -moz-animation: dance 200ms infinite linear;
+}
 
+@keyframes dance {
+    0% {
+       transform: rotate(-2deg) 
+    }
+    
+    100% {
+        transform: rotate(2deg)
+    }
+}
+
+@-webkit-@keyframes dance {
+    0% {
+       transform: rotate(-2deg) 
+    }
+    
+    100% {
+        transform: rotate(2deg)
+    }
+}
+
+@-moz-@keyframes dance {
+    0% {
+       transform: rotate(-2deg) 
+    }
+    
+    100% {
+        transform: rotate(2deg)
+    }
+}
+
+
+
+.js-fade {
+    opacity: 100;
+}
+
+.truck {
+    position: relative;
+    right: -100vw;
+    
+    transition: all 2s linear;
+}
+
+.js-slide-left {
+    right: 100vw;
+}
 
 
 @media only screen and (min-width: 25em) {
