@@ -168,13 +168,29 @@
     margin: auto;
 }
 
-.hula {
-    width: 44%;
+.btns {
+    background-color: #D84802;
+    color: white;
+    font-family: 'Droid Sans', sans-serif;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
 }
 
+.surf {
+    position: relative;
+    left: -100vw;
+    transition: all 3000ms;
+}
 
-
-
+.js-slide {
+    left: 100vw;
+}
 
 
 
