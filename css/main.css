@@ -75,9 +75,9 @@ a:hover {
 
 .btn:hover {
     width: 40px;
-    animation: wiggle 10ms alternate infinite;
     -webkit-animation: wiggle 10ms alternate infinite;
     -moz-animation: wiggle 10ms alternate infinite;
+    animation: wiggle 10ms alternate infinite;
 }
 
 @keyframes wiggle {
@@ -111,9 +111,9 @@ a:hover {
     top: 18%;
     left: 50%;
     margin-left: -20%;
-    animation: play-record 3000ms infinite linear;
     -webkit-animation: play-record 3000ms infinite linear;
     -moz-animation: play-record 3000ms infinite linear;
+    animation: play-record 3000ms infinite linear;
 }
 
 
@@ -158,9 +158,9 @@ a:hover {
     font-size: 8vmax;
     text-shadow: 2px 2px #fff;
     
-    animation: zoom 5s ease;
     -webkit-animation: zoom 5s ease;
     -moz-animation: zoom 5s ease;
+    animation: zoom 5s ease;
 }
 
 @keyframes zoom {
@@ -256,9 +256,9 @@ a:hover {
     
     transition: all 2s linear;
     
-    animation: surf 500ms infinite linear;
     -webkit-animation: surf 500ms infinite linear;
     -moz-animation: surf 500ms infinite linear;
+    animation: surf 500ms infinite linear;
 }
 
 @keyframes surf {
@@ -303,9 +303,9 @@ a:hover {
     
     transition: opacity 1s linear;
     
-    animation: dance 200ms infinite linear;
     -webkit-animation: dance 200ms infinite linear;
     -moz-animation: dance 200ms infinite linear;
+    animation: dance 200ms infinite linear;
 }
 
 @keyframes dance {
