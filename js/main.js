@@ -25,3 +25,7 @@ var $truck = $('.truck');
 $btnSlideLeft.on('click', function () {
     $truck.toggleClass('js-slide-left');
 });
+
+$('.arrow').localScroll();
+$('.bottom-arrow').localScroll();
+$('.top-nav-li').localScroll();

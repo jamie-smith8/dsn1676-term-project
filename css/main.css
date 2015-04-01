@@ -421,6 +421,15 @@ a:hover {
     top: 300%;
     background-color: #F2D753;
     left: 0;
+    bottom: 0;
+}
+
+.bottom-arrow {
+    width: 50px;
+    position: relative;
+    top: 15px;
+    left: 50%;
+    margin-left: -25px;
 }
 
 
