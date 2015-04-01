@@ -217,12 +217,58 @@ a:hover {
 }
 
 
+.about {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 98.5%;
+    background-color: #D84802;
+    overflow: hidden;
+}
+
+
+.subhead {
+    font-family: 'Lobster', cursive;
+    color: #D84802;
+    text-shadow: 2px 2px #fff;
+    letter-spacing: 2px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 40px;
+}
+
+.subhead-two {
+    font-family: 'Lobster', cursive;
+    color: #D84802;
+    text-shadow: 2px 2px #fff;
+    letter-spacing: 2px;
+    position: relative;
+    left: 10px;
+    font-size: 40px;
+}
+
+.bio {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.bio-pic {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 20px;
+}
+
 .one {
     position: absolute;
-    left: 50%;
-    margin-left: -190px;
-    top: 100%;
+    top: 210%;
     overflow: hidden;
+    width: 100%;
+    left: 0;
 }
 
 .move {
@@ -367,7 +413,15 @@ a:hover {
     top: 0;
 }
 
-
+.bottom {
+    width: 100%;
+    height: 60px;
+    color: black;
+    position:absolute;
+    top: 300%;
+    background-color: #F2D753;
+    left: 0;
+}
 
 
 
@@ -380,7 +434,9 @@ a:hover {
         top: 30%;
     }
     
-    
+    .bottom {
+        top: 450%;
+    }
     
     
     
@@ -396,8 +452,15 @@ a:hover {
     }
     
     
+    .one {
+       top: 190%; 
+        
+    }
     
     
+    .bottom {
+        top: 240%;
+    }
     
     
 }
@@ -412,7 +475,9 @@ a:hover {
     }
     
     
-    
+    .bottom {
+        top: 260%;
+    }
     
     
     
@@ -422,10 +487,14 @@ a:hover {
 @media only screen and (min-width: 90em) {
 
     
+    .one {
+      top: 210%;  
+    }
     
     
-    
-    
+    .bottom {
+        top: 300%;
+    }
     
     
 }
