@@ -29,3 +29,5 @@ $btnSlideLeft.on('click', function () {
 $('.arrow').localScroll();
 $('.bottom-arrow').localScroll();
 $('.top-nav-li').localScroll();
+
+

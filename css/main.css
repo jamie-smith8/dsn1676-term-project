@@ -11,10 +11,19 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
+    
+    overflow-x: hidden;
 }
 
 *, *::before, *::after {
 box-sizing: inherit;
+    
+    
+    margin: 0;
+}
+
+.skip-links {
+    display: none;
 }
 
 .panel {
@@ -93,24 +102,21 @@ a:hover {
     
 }
 
+
 .header {
     height: 90vh;
     background-color: #F2D753;
     width: 100%;
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-    left: 0;
-    top: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .spin-record {
-    width: 40%;
-    position: absolute;
-    top: 18%;
+    width: 180px;
+    position: relative;
+    top: 140px;
     left: 50%;
-    margin-left: -20%;
+    margin-left: -90px;
     -webkit-animation: play-record 3000ms infinite linear;
     -moz-animation: play-record 3000ms infinite linear;
     animation: play-record 3000ms infinite linear;
@@ -150,9 +156,9 @@ a:hover {
 
 .title {
     text-align: center;
+    display: block;
     margin: auto;
-    position: relative;
-    top: 40%;
+    padding-top: 8rem;
     color: #D84802;
     font-family: 'Lobster', cursive;
     font-size: 8vmax;
@@ -197,31 +203,24 @@ a:hover {
 .arrow {
     width: 50px;
     position: absolute;
-    bottom: 4%;
+    top: 85vh;
     left: 50%;
-    margin-left: -25px;
+    margin-left: -30px;
+    
+    
 }
 
 .est {
-    position: absolute;
     margin: auto;
     text-align: center;
-    top: 90%;
-    left: 50%;
-    margin-left: -47px;
-    padding: 20px 0px;
+    padding: 20px 2px;
     color: #D84802;
     font-family: 'Lobster', cursive;
     font-size: 30px;
-    
 }
 
 
 .about {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 98.5%;
     background-color: #D84802;
     overflow: hidden;
 }
@@ -264,8 +263,7 @@ a:hover {
 }
 
 .one {
-    position: absolute;
-    top: 210%;
+    padding-top: 1rem;
     overflow: hidden;
     width: 100%;
     left: 0;
@@ -309,31 +307,31 @@ a:hover {
 
 @keyframes surf {
     0% {
-       transform: rotate(-5deg) 
+       transform: rotate(-5deg); 
     }
     
     100% {
-        transform: rotate(0deg)
+        transform: rotate(0deg);
     }
 }
 
 @-webkit-keyframes surf {
     0% {
-       transform: rotate(-5deg) 
+       transform: rotate(-5deg); 
     }
     
     100% {
-        transform: rotate(0deg)
+        transform: rotate(0deg);
     }
 }
 
 @-moz-keyframes surf {
     0% {
-       transform: rotate(-5deg) 
+       transform: rotate(-5deg); 
     }
     
     100% {
-        transform: rotate(0deg)
+        transform: rotate(0deg);
     }
 }
 
@@ -356,31 +354,31 @@ a:hover {
 
 @keyframes dance {
     0% {
-       transform: rotate(-2deg) 
+       transform: rotate(-2deg); 
     }
     
     100% {
-        transform: rotate(2deg)
+        transform: rotate(2deg);
     }
 }
 
 @-webkit-keyframes dance {
     0% {
-       transform: rotate(-2deg) 
+       transform: rotate(-2deg); 
     }
     
     100% {
-        transform: rotate(2deg)
+        transform: rotate(2deg);
     }
 }
 
 @-moz-keyframes dance {
     0% {
-       transform: rotate(-2deg) 
+       transform: rotate(-2deg);
     }
     
     100% {
-        transform: rotate(2deg)
+        transform: rotate(2deg);
     }
 }
 
@@ -401,27 +399,19 @@ a:hover {
     right: 100vw;
 }
 
-.header {
-    height: 90vh;
-    background-color: #F2D753;
-    width: 100%;
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
 
 .bottom {
     width: 100%;
     height: 60px;
-    color: black;
-    position: absolute;
-    top: 300%;
+    color: white;
     background-color: #F2D753;
-    left: 0;
-    bottom: 0;
+}
+
+
+.waves {
+    width: 110%;
+    left: -5%;
+    margin-bottom: -1rem;
 }
 
 .bottom-arrow {
@@ -432,21 +422,157 @@ a:hover {
     margin-left: -25px;
 }
 
+#boat {
+    -webkit-animation: boat 10s ease infinite alternate;
+    -moz-animation: boat 10s ease infinite alternate;
+    animation: boat 10s ease infinite alternate;
+}
 
+
+@keyframes boat {
+    0% {
+       transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(200%);
+    }
+}
+
+@-webkit-keyframes boat {
+    0% {
+       transform: translateX(0); 
+    }
+    
+    100% {
+        transform: translateX(200%);
+    }
+}
+
+@-moz-keyframes boat {
+    0% {
+       transform: translateX(0); 
+    }
+    
+    100% {
+        transform: translateX(200%);
+    }
+}
+
+
+#middle_wave {
+    -webkit-animation: rock-left 1s infinite alternate;
+    -moz-animation: rock-left 1s infinite alternate;
+    animation: rock-left 1s infinite alternate;
+}
+
+@keyframes rock-left {
+    0% {
+       transform: translateX(-6%);
+    }
+    
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes rock-left {
+    0% {
+       transform: translateX(-6%);
+    }
+    
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-moz-keyframes rock-left {
+    0% {
+       transform: translateX(-6%);
+    }
+    
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+#front_wave {
+     -webkit-animation: rock-right 500ms infinite alternate;
+    -moz-animation: rock-right 500ms infinite alternate;
+    animation: rock-right 500ms infinite alternate;
+}
+
+
+@keyframes rock-right {
+    0% {
+       transform: translateY(-3%);
+    }
+    
+    100% {
+        transform: translateY(1%);
+    }
+}
+
+@-webkit-keyframes rock-right {
+    0% {
+       transform: translateY(-3%);
+    }
+    
+    100% {
+        transform: translateY(1%);
+    }
+}
+
+@-moz-keyframes rock-right {
+    0% {
+       transform: translateY(-3%);
+    }
+    
+    100% {
+        transform: translateY(1%);
+    }
+}
+
+#behind_wave {
+    -webkit-animation: slow-rock 13s infinite alternate;
+    -moz-animation: slow-rock 13s infinite alternate;
+    animation: slow-rock 13s infinite alternate;
+}
+
+@keyframes slow-rock {
+    0% {
+       transform: translateX(-6%);
+    }
+    
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slow-rock {
+    0% {
+       transform: translateX(-6%);
+    }
+    
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-moz-keyframes slow-rock {
+    0% {
+       transform: translateX(-6%);
+    }
+    
+    100% {
+        transform: translateX(0%);
+    }
+}
 
 
 @media only screen and (min-width: 25em) {
 
-    .spin-record {
-        width: 30%;
-        margin: -15%;
-        top: 30%;
-    }
-    
-    .bottom {
-        top: 450%;
-    }
-    
+ 
     
     
 }
@@ -454,40 +580,15 @@ a:hover {
 
 @media only screen and (min-width: 38em) {
 
-     .spin-record {
-        width: 25%;
-        top: 30%;
-        margin: -12.5%; 
-    }
+  
     
-    
-    .one {
-       top: 190%; 
-        
-    }
-    
-    
-    .bottom {
-        top: 240%;
-    }
-    
+
     
 }
 
 
 @media only screen and (min-width: 50em) {
 
-    .spin-record {
-        width: 20%;
-        top: 26%;
-        margin: -10%; 
-    }
-    
-    
-    .bottom {
-        top: 260%;
-    }
-    
     
     
 }
@@ -496,15 +597,7 @@ a:hover {
 @media only screen and (min-width: 90em) {
 
     
-    .one {
-      top: 210%;  
-    }
-    
-    
-    .bottom {
-        top: 300%;
-    }
-    
+  
     
 }
 
