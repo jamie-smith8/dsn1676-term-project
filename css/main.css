@@ -263,16 +263,12 @@ a:hover {
     z-index: 1;
 }
 
-.vinyl-shelf {
-    display: block;
-    margin: auto;
-    
-}
 
 .vinyl {
     width: 100%;
     padding: 2vw;
 }
+
 
 #pic {
     opacity: 0;
@@ -288,18 +284,6 @@ a:hover {
 #picc {
     transition: all 1s linear;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .one {
     padding-top: 1rem;
@@ -612,6 +596,7 @@ a:hover {
 @media only screen and (min-width: 25em) {
 
  
+ 
     
     
 }
@@ -620,7 +605,9 @@ a:hover {
 @media only screen and (min-width: 38em) {
 
   
-    
+       .unit-m-1-6 {
+        width: 16.6667%;
+}
 
     
 }
