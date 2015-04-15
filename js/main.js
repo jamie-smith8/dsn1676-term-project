@@ -26,6 +26,19 @@ $btnSlideLeft.on('click', function () {
     $truck.toggleClass('js-slide-left');
 });
 
+
+
+var $picFade = $('.about');
+
+$picFade.waypoint(function () {
+    $picFade.toggleClass('js-switch');
+}, {offset: '5%'});
+
+
+
+
+
+
 $('.arrow').localScroll();
 $('.bottom-arrow').localScroll();
 $('.top-nav-li').localScroll();

@@ -260,7 +260,46 @@ a:hover {
     height: 100%;
     position: relative;
     padding: 20px;
+    z-index: 1;
 }
+
+.vinyl-shelf {
+    display: block;
+    margin: auto;
+    
+}
+
+.vinyl {
+    width: 100%;
+    padding: 2vw;
+}
+
+#pic {
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+.js-switch #pic {
+    display: block;
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+#picc {
+    transition: all 1s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .one {
     padding-top: 1rem;
@@ -347,9 +386,9 @@ a:hover {
     
     transition: opacity 1s linear;
     
-    -webkit-animation: dance 200ms infinite linear;
-    -moz-animation: dance 200ms infinite linear;
-    animation: dance 200ms infinite linear;
+    -webkit-animation: dance 400ms infinite linear;
+    -moz-animation: dance 400ms infinite linear;
+    animation: dance 400ms infinite linear;
 }
 
 @keyframes dance {
