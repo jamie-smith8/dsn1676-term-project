@@ -462,8 +462,17 @@ a:hover {
 
 #boat {
     -webkit-animation: boat 10s ease infinite alternate;
-    -moz-animation: boat 10s ease infinite alternate;
     animation: boat 10s ease infinite alternate;
+}
+
+@-webkit-keyframes boat {
+    0% {
+       transform: translateX(0); 
+    }
+    
+    100% {
+        transform: translateX(200%);
+    }
 }
 
 
@@ -477,41 +486,10 @@ a:hover {
     }
 }
 
-@-webkit-keyframes boat {
-    0% {
-       transform: translateX(0); 
-    }
-    
-    100% {
-        transform: translateX(200%);
-    }
-}
-
-@-moz-keyframes boat {
-    0% {
-       transform: translateX(0); 
-    }
-    
-    100% {
-        transform: translateX(200%);
-    }
-}
-
 
 #middle_wave {
     -webkit-animation: rock-left 1s infinite alternate;
-    -moz-animation: rock-left 1s infinite alternate;
     animation: rock-left 1s infinite alternate;
-}
-
-@keyframes rock-left {
-    0% {
-       transform: translateX(-6%);
-    }
-    
-    100% {
-        transform: translateX(0%);
-    }
 }
 
 @-webkit-keyframes rock-left {
@@ -524,7 +502,7 @@ a:hover {
     }
 }
 
-@-moz-keyframes rock-left {
+@keyframes rock-left {
     0% {
        transform: translateX(-6%);
     }
@@ -534,21 +512,11 @@ a:hover {
     }
 }
 
+
+
 #front_wave {
      -webkit-animation: rock-right 500ms infinite alternate;
-    -moz-animation: rock-right 500ms infinite alternate;
     animation: rock-right 500ms infinite alternate;
-}
-
-
-@keyframes rock-right {
-    0% {
-       transform: translateY(-3%);
-    }
-    
-    100% {
-        transform: translateY(1%);
-    }
 }
 
 @-webkit-keyframes rock-right {
@@ -561,7 +529,7 @@ a:hover {
     }
 }
 
-@-moz-keyframes rock-right {
+@keyframes rock-right {
     0% {
        transform: translateY(-3%);
     }
@@ -570,6 +538,8 @@ a:hover {
         transform: translateY(1%);
     }
 }
+
+
 
 #behind_wave {
     -webkit-animation: slow-rock 13s infinite alternate;
