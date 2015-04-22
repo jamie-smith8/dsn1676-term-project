@@ -22,6 +22,10 @@ box-sizing: inherit;
     margin: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .skip-links {
     margin: 0;
     padding: 0;
@@ -133,32 +137,20 @@ a:hover {
     left: 50%;
     margin-left: -90px;
     -webkit-animation: play-record 3000ms infinite linear;
-    -moz-animation: play-record 3000ms infinite linear;
     animation: play-record 3000ms infinite linear;
-}
-
-
-@keyframes play-record {
-    0% {
-       transform: rotate(0deg) 
-    }
-    
-    100% {
-        transform: rotate(360deg)
-    }
 }
 
 @-webkit-keyframes play-record {
     0% {
-       transform: rotate(0deg) 
+       -webkit-transform: rotate(0deg) 
     }
     
     100% {
-        transform: rotate(360deg)
+        -webkit-transform: rotate(360deg)
     }
 }
 
-@-moz-keyframes play-record {
+@keyframes play-record {
     0% {
        transform: rotate(0deg) 
     }
@@ -196,11 +188,11 @@ a:hover {
 
 @-webkit-keyframes zoom {
     0% {
-       transform: scale(0,0); 
+       -webkit-transform: scale(0,0); 
     }
     
     100% {
-        transform: scale(1,1)
+        -webkit-transform: scale(1,1)
     }
 }
 
@@ -339,8 +331,17 @@ a:hover {
     transition: all 2s linear;
     
     -webkit-animation: surf 500ms infinite linear;
-    -moz-animation: surf 500ms infinite linear;
     animation: surf 500ms infinite linear;
+}
+
+@-webkit-keyframes surf {
+    0% {
+       -webkit-transform: rotate(-5deg); 
+    }
+    
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
 }
 
 @keyframes surf {
@@ -353,25 +354,6 @@ a:hover {
     }
 }
 
-@-webkit-keyframes surf {
-    0% {
-       transform: rotate(-5deg); 
-    }
-    
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-@-moz-keyframes surf {
-    0% {
-       transform: rotate(-5deg); 
-    }
-    
-    100% {
-        transform: rotate(0deg);
-    }
-}
 
 
 
@@ -386,8 +368,17 @@ a:hover {
     transition: opacity 1s linear;
     
     -webkit-animation: dance 400ms infinite linear;
-    -moz-animation: dance 400ms infinite linear;
     animation: dance 400ms infinite linear;
+}
+
+@-webkit-keyframes dance {
+    0% {
+       -webkit-transform: rotate(-2deg); 
+    }
+    
+    100% {
+        -webkit-transform: rotate(2deg);
+    }
 }
 
 @keyframes dance {
@@ -399,27 +390,6 @@ a:hover {
         transform: rotate(2deg);
     }
 }
-
-@-webkit-keyframes dance {
-    0% {
-       transform: rotate(-2deg); 
-    }
-    
-    100% {
-        transform: rotate(2deg);
-    }
-}
-
-@-moz-keyframes dance {
-    0% {
-       transform: rotate(-2deg);
-    }
-    
-    100% {
-        transform: rotate(2deg);
-    }
-}
-
 
 
 .js-fade {
@@ -461,17 +431,17 @@ a:hover {
 }
 
 #boat {
-    -webkit-animation: boat 10s ease infinite alternate;
-    animation: boat 10s ease infinite alternate;
+    -webkit-animation: boat 7s ease infinite alternate;
+    animation: boat 7s ease infinite alternate;
 }
 
 @-webkit-keyframes boat {
     0% {
-       transform: translateX(0); 
+       -webkit-transform: translateX(0); 
     }
     
     100% {
-        transform: translateX(200%);
+        -webkit-transform: translateX(100px);
     }
 }
 
@@ -482,7 +452,7 @@ a:hover {
     }
     
     100% {
-        transform: translateX(200%);
+        transform: translateX(100px);
     }
 }
 
@@ -494,11 +464,11 @@ a:hover {
 
 @-webkit-keyframes rock-left {
     0% {
-       transform: translateX(-6%);
+       -webkit-transform: translateX(-6%);
     }
     
     100% {
-        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
     }
 }
 
@@ -521,11 +491,11 @@ a:hover {
 
 @-webkit-keyframes rock-right {
     0% {
-       transform: translateY(-3%);
+       -webkit-transform: translateY(-3%);
     }
     
     100% {
-        transform: translateY(1%);
+        -webkit-transform: translateY(1%);
     }
 }
 
@@ -547,6 +517,16 @@ a:hover {
     animation: slow-rock 13s infinite alternate;
 }
 
+@-webkit-keyframes slow-rock {
+    0% {
+       -webkit-transform: translateX(-6%);
+    }
+    
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
 @keyframes slow-rock {
     0% {
        transform: translateX(-6%);
@@ -556,27 +536,6 @@ a:hover {
         transform: translateX(0%);
     }
 }
-
-@-webkit-keyframes slow-rock {
-    0% {
-       transform: translateX(-6%);
-    }
-    
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-@-moz-keyframes slow-rock {
-    0% {
-       transform: translateX(-6%);
-    }
-    
-    100% {
-        transform: translateX(0%);
-    }
-}
-
 
 @media only screen and (min-width: 25em) {
 
